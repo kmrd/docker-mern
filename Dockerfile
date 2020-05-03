@@ -15,7 +15,7 @@
 # docker run -it --rm --name mern -p 80:80 --mount type=bind,source="%cd%",target=/var/www/html/ kmrd/mern
 #
 #
-FROM ubuntu:16.04
+FROM ubuntu:20.04
 MAINTAINER David Reyes <david@thoughtbubble.ca>
 
 # Environments vars
@@ -36,13 +36,11 @@ RUN apt-get -y --fix-missing install \
       apt-transport-https \
       git \
       nano \
-      lynx-cur \
       sudo \
       lsof \
       dos2unix \
       unzip \
       nodejs \
-      nodejs-legacy \
       npm
 
 
