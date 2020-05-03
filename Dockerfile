@@ -32,6 +32,7 @@ RUN apt-get -y update && \
 
 
 RUN apt-get -y --fix-missing install \
+ 	  lsb-release \
       curl \
       apt-transport-https \
       git \
