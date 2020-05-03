@@ -42,7 +42,8 @@ RUN apt-get -y --fix-missing install \
       dos2unix \
       unzip \
       nodejs \
-      npm
+      npm \
+      yarnpkg
 
 
 # Install supervisor (not strictly necessary)
