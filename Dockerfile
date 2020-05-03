@@ -80,7 +80,7 @@ WORKDIR /var/www/html
 
 EXPOSE 80
 EXPOSE 443
-
+EXPOSE 3000
 
 #-----------------------#
 # Final Action          #
@@ -102,15 +102,6 @@ ENTRYPOINT ["/entrypoint.sh"]
 #CMD ["/bin/bash"]
 
 
-
-
-
-
-
 #CMD ["nginx"]
 
 # CMD ["nginx", "-g", "daemon off"]
-
-# Composer install
-# RUN curl -sS https://getcomposer.org/installer | php
-# RUN mv composer.phar /usr/local/bin/composer
