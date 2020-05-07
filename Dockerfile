@@ -57,11 +57,11 @@ RUN apt-get install -y nginx-full
 # Install MySQL
 RUN apt-get -y --fix-missing install \
       mysql-server \
-      mysql-client \
-      php-mysql
+      mysql-client
 
-# Install LESS package
+# Install LESS & SASS packages
 RUN npm install -g less
+# RUN npm install -g node-sass
 
 
 #-----------------------#
